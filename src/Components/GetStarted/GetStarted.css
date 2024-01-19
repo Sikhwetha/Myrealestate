@@ -1,0 +1,19 @@
+.inner-container{
+    gap:1.5rem;
+    background:#4161df;
+    padding:2rem;
+    border-radius: 10px;
+    text-align:center;
+}
+
+.inner-container .primaryText{
+    color:white;
+    font-weight: 600;
+
+}
+
+
+.inner-container .button{
+    font-weight: 600;
+    font-size: 1rem;;
+}

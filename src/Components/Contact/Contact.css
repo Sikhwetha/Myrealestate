@@ -1,0 +1,82 @@
+.C-container{
+    justify-content: space-between;
+    
+}
+
+.C-container>div{
+    flex:1;
+}
+
+.c-right{
+    width: 100%;
+}
+
+.c-left{
+    gap: 0.05rem;
+}
+
+.contactMode{
+  margin-top: 2rem;  
+  gap: 1.5rem;
+}
+
+.mode{
+    width: 16rem;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius:5px;
+    gap: 1rem;
+    transition: All 300ms ease-in-out;
+    margin: 10px;
+    margin-bottom: -10px;
+}
+
+.mode .button{
+    width: 100%;
+    background: lightBlue;
+    color: var(--blue);
+    font-size:0.9rem;
+    font-weight: 600;
+    
+}
+.icon{
+    background: lightBlue;
+}
+
+.mode>:nth-child(1){
+    width:100%;
+    gap:1.6rem;
+}
+.mode  .primary{
+    font-size:0.9rem;
+    font-weight: 600;
+    color: #1f3e72;
+}
+
+.mode:hover{
+    scale:1.1;
+    box-shadow:var(--blue-gradient);
+}
+
+.mode .button:hover{
+    color:black;
+    scale:0.8;
+}
+
+@media (max-width: 640px) {
+   
+  
+    .c-imag{
+      width: 95%;
+      height: 20rem;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .C-container{
+        flex-direction: column;  
+    }
+    
+  }
+
+  

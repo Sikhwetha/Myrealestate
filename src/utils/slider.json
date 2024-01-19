@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Banten Bliss Homes",
+  "price": "41,567",
+  "detail": "Palm Street C3 No.789, Serene Corner, Ciracas, Serang, Banten",
+    "image": "./r1.png"
+  },
+  {
+    "name": "Updated Garden Oasis",
+  "price": "72,489",
+  "detail": "Sunflower Boulevard IX No.123, Blossomville, Meadowland, Depok, Jawa Barat",
+    "image": "./r2.png"
+  },
+  {
+    "name": "Serenity Haven Residence",
+  "price": "42,567",
+  "detail": "Harmony Street B2 No.456, Tranquil Zone, Serang, Banten",
+    "image": "./r3.png"
+  },
+  {
+    "name": "Tranquil Oasis Residence",
+  "price": "53,721",
+  "detail": "Harmony Boulevard A3 No.789, Green Haven, Jakarta Timur, DKI Jakarta",
+    "image": "./r1.png"
+  },
+  {
+      "name": "Greenview Residence",
+      "price": "72,489",
+      "detail": "Serenity Avenue B4 No.321, Tranquil Town, Depok, Jawa Barat",
+    "image": "./r2.png"
+  },
+  {
+    "name": "Citralan Puri Serang",
+    "price": "35,853",
+    "detail": "Ruko Puri Indah Residence Block A7, Lingkar Street, Ciracas, Serang, Banten",
+    "image": "./r3.png"
+  }
+]
