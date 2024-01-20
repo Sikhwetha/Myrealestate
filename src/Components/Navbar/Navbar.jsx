@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <nav className="navbar">
-            <div className="logo">Real Estate</div>
+            <div className="logo"><img src="./logo.png" alt="logo" width={70}/></div>
             <ul className={`nav-links ${isMobileMenuOpen ? 'mobile' : ''}`}>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/properties">Properties</Link></li>
