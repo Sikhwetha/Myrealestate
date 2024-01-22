@@ -1,4 +1,4 @@
-1.Name of the website
+<!-- 1.Name of the website
  Haven Estate
 2.Industry
 Housing
@@ -33,5 +33,5 @@ Buyers looking for potential renovation or development projects.
 Individuals who are selling their homes for the first time and may need extra guidance and support.
 Those unfamiliar with the real estate market and processes.
 Experienced Sellers:
-Seasoned property sellers who appreciate efficiency, transparency, and advanced tools to enhance their selling experience.
+Seasoned property sellers who appreciate efficiency, transparency, and advanced tools to enhance their selling experience. -->
 
