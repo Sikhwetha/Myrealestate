@@ -1,11 +1,19 @@
 // ContactPage.js
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import "./Contact.css";
+import { LuPhone } from "react-icons/lu";
+import { MdOutlineEmail } from "react-icons/md";
+import { CiLocationOn } from "react-icons/ci";
+import { FaFacebookF } from "react-icons/fa";
+import { CiTwitter } from "react-icons/ci";
+import { CiInstagram } from "react-icons/ci";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -18,94 +26,137 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can handle the form submission logic here
-    console.log('Form submitted:', formData);
+
+    console.log("Form submitted:", formData);
   };
 
   return (
-    <div style={{ padding: '90px 20px' }}>
-      <header >
-        <h1 style={{ textAlign: 'center'}}>Get in Touch</h1>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-          }}
-        >
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              width: '100%',
-              maxWidth: '600px',
-              margin: '0 auto',
-              marginBottom: '20px',
-            }}
-          >
-            <p>Email: sikhwethamulanga@gmail.com</p>
-            <p>Phone: 0694392083</p>
+    <>
+      <div className="contact-container">
+        <section className="c-container">
+          <h2>Get In Touch</h2>
+          <p>
+          Have a question or feedback? We're here to listen and assist. Drop us a message, and we'll get back to you promptly.
+          </p>
+          <div>
+            <span className="c-item">
+              <span className="phone">
+                <LuPhone />
+              </span>
+              <span className="list">
+                <span className="list1">Phone</span>
+                <span className="col">+27 69439 2083</span>
+              </span>
+            </span>
+
+            <span className="c-item">
+              <span className="phone">
+                <MdOutlineEmail />
+              </span>
+              <span className="list">
+                <span className="list1">Email</span>
+                <span className="col">Sikhwwethamulanga@gmail.com</span>
+              </span>
+            </span>
+
+            <span className="c-item">
+              <span className="phone">
+                <CiLocationOn />
+              </span>
+              <span className="list">
+                <span className="list1">Location</span>
+                <span className="col">71 Devilliers street Turffontein</span>
+              </span>
+            </span>
+
+            <div className="social">
+              <a href="/">
+                <span>
+                  <FaFacebookF />
+                </span>
+              </a>
+              <a href="/">
+                {" "}
+                <span>
+                  <CiTwitter />
+                </span>
+              </a>
+              <a href="/">
+                <span>
+                  <CiInstagram />
+                </span>
+              </a>
+              <a href="/">
+                {" "}
+                <span>
+                  <FaLinkedinIn />{" "}
+                </span>
+              </a>
+            </div>
           </div>
-          <div
-            style={{
-              display: 'flex',
-              flexDirection: 'column',
-              width: '100%',
-              maxWidth: '600px',
-              margin: '0 auto',
-            }}
-          >
-            <form onSubmit={handleSubmit}>
-              <div style={{ marginBottom: '15px' }}>
-                <label htmlFor="name">Name:</label>
+        </section>
+        <section className="c-second">
+          <form onSubmit={handleSubmit} className="">
+            <div className="flex">
+              <div className="name">
+                <label>Your Name</label>
                 <input
                   type="text"
-                  id="name"
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  style={{ width: '100%', padding: '8px' }}
                 />
               </div>
-              <div style={{ marginBottom: '15px' }}>
-                <label htmlFor="email">Email:</label>
+              <div className="name">
+                <label>Email</label>
                 <input
-                  type="email"
-                  id="email"
+                  type="text"
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  style={{ width: '100%', padding: '8px' }}
                 />
               </div>
-              <div style={{ marginBottom: '15px' }}>
-                <label htmlFor="message">Message:</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  style={{ width: '100%', padding: '8px' }}
-                />
-              </div>
-              <button
-                type="submit"
-                style={{
-                  backgroundColor: '#4CAF50',
-                  color: 'white',
-                  padding: '10px 15px',
-                  border: 'none',
-                  borderRadius: '5px',
-                  cursor: 'pointer',
-                }}
+            </div>
+
+            <div className="subject">
+              <label>Subject</label>
+              <input
+                type="text"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+              />
+            </div>
+            <div className=" sub">
+              <label>Your message</label>
+              <input
+                type="text"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+              />
+            </div>
+            <button>
+              <p>Submit</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="4"
               >
-                Send
-              </button>
-            </form>
-          </div>
-        </div>
-      </header>
-    </div>
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"
+                ></path>
+              </svg>
+            </button>
+          </form>
+        </section>
+      </div>
+    </>
   );
 };
 

@@ -1,8 +1,14 @@
-.c-container{
-    justify-content: space-around;
+.cc-container{
+    justify-content: space-between;
+   
+    width: 100%;
     gap: 1rem;
    
 }
-.c-container>img{
+.cc-container>img{
   width: 9rem;  
 }
+.cc-wrapper{
+  width: 100%;
+}
+
