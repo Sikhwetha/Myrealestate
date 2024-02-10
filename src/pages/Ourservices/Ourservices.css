@@ -1,0 +1,79 @@
+/* Container styles */
+.ourservices-container {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 2.5rem;
+  }
+  
+  /* Heading styles */
+  .heading {
+    font-size: 3rem; 
+    font-weight: bold;
+    color: #1f3e72;
+    margin-bottom: 20px; 
+  }
+  
+  /* Subheading styles */
+  .subheading {
+    font-size: 1.2rem; 
+    color: #1f3e72;
+    margin-bottom: 30px; 
+  }
+  
+  /* Service info container */
+  .service-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Add gap between services */
+    justify-content: center;
+  }
+  .
+  /* Individual service styles */
+  .service {
+    background-color: #f9f9f9; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    
+  }
+  
+  /* Service title styles */
+  .service-title {
+    font-size: 1.5rem; 
+    color: rgb(140 139 139);
+    margin-bottom: 10px; 
+  }
+  
+  /* Service description styles */
+  .service-description {
+    font-size: 1rem; 
+    color: #666; 
+  }
+
+ 
+
+.Ap {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    padding: 20px;
+  }
+
+  .Ap h1{
+  padding-bottom: 2rem;
+  }
+  
+  .property-grid {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+  }
+  
+
+  @media screen and (max-width: 768px) {
+    .heading {
+        font-size: 2rem;  
+      }
+  }
+  
