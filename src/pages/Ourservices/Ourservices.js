@@ -167,15 +167,15 @@ export const Ourservices = () => {
       <div className='service-info'>
         <div className='service'>
           <h2 className='service-title '>Selling</h2>
-          <p className='service-description'>Transforming Ideas into Reality: We specialize in turning your innovative concepts into tangible solutions that drive success..</p>
+          <p className='service-description'>Discover your dream home with us! Browse our curated selection of homes for sale and find the perfect match for you and your family</p>
         </div>
         <div className='service'>
           <h2 className='service-title'>Rent</h2>
-          <p className='service-description'>Enhancing Customer Experience: Our focus is on creating seamless experiences that delight your customers and foster loyalty</p>
+          <p className='service-description'>Find your ideal rental property effortlessly! Explore our diverse range of rental homes, tailored to fit your lifestyle and budget.</p>
         </div>
         <div className='service'>
           <h2 className='service-title'>Rent to Buy</h2>
-          <p className='service-description'>Nulla posuere quam vel libero hendrerit, sit amet tincidunt lectus eleifend.</p>
+          <p className='service-description'>Make your dream of homeownership a reality with our rent-to-buy options! Start renting now and transition seamlessly into owning your own home.</p>
         </div>
      
       </div>
